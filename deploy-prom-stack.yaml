@@ -1,0 +1,47 @@
+- name: Deploy Prometheus Stack on EKS using Helm
+  hosts: localhost
+  gather_facts: no
+  tasks:
+
+    - name: Add Prometheus Helm repository
+      kubernetes.core.helm_repository:
+        name: prometheus-community
+        repo_url: https://prometheus-community.github.io/helm-charts
+      ignore_errors: no
+
+    - name: Update Helm repositories
+      ansible.builtin.command:
+        cmd: helm repo update
+      ignore_errors: no
+
+    - name: Ensure namespace exists
+      kubernetes.core.k8s:
+        api_version: v1
+        kind: Namespace
+        name: monitoring
+      ignore_errors: no
+
+    - name: Install Prometheus stack with Alertmanager and Grafana exposed
+      kubernetes.core.helm:
+        release_name: prometheus-stack
+        release_namespace: monitoring
+        chart_ref: prometheus-community/kube-prometheus-stack
+        create_namespace: yes
+        wait: yes
+        values:
+          prometheus:
+            enabled: true
+            service:
+              type: LoadBalancer
+            spec:
+              maximumStartupDurationSeconds: 180
+          grafana:
+            service:
+              type: LoadBalancer
+              port: 3000
+          alertmanager:
+            enabled: true
+            service:
+              type: LoadBalancer
+              port: 9093
+      ignore_errors: no
