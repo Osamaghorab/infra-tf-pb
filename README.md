@@ -8,18 +8,22 @@ This setup ensures a **fully automated cloud infrastructure**, supporting effici
 ---
 
 ## **Setup & Deployment**  
+
 ### **Prerequisites**  
 AWS CLI & configured credentials  
 Terraform installed (`>= 1.3`)  
 Ansible installed (`>= 2.9`)  
 
-### **Steps**  
+
+
 **Clone the repository:**  
    ```sh
    git clone git@github.com:Osamaghorab/infra-tf-pb.git
    cd infra-tf-pb
 
-## **Contributors & Links**  
-**Main Repo:** 🔗 [micsvc-project](https://github.com/Osamaghorab/micsvc-project)  
- **Microservices Deployment Repo:** 🔗 [micsvc-manifests](https://github.com/Osamaghorab/micsvc-manifests)  
- **Original Reference Repo:** 🔗 [Google Cloud Microservices Demo](https://github.com/GoogleCloudPlatform/microservices-demo)  
+
+
+Contributors & Links
+Main Repo: 🔗 micsvc-project
+Microservices Deployment Repo: 🔗 micsvc-manifests
+Original Reference Repo: 🔗 Google Cloud Microservices Demo
