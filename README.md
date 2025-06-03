@@ -1,7 +1,9 @@
-# **Infrastructure Provisioning for Online Boutique**  
+# **Infrastructure Provisioning & Microservices Deployment for Online Boutique**  
 
 ## **Overview**  
-This repository contains **Terraform configurations** for provisioning an **AWS EKS cluster**, along with **Ansible playbooks** for system configuration and For Deploying Microservices for the app and Prometheus stack. It automates cloud resource setup, ensuring a smooth deployment pipeline for microservices.  
+This repository contains **Terraform configurations** for provisioning an **AWS EKS cluster**, along with **Ansible playbooks** for system configuration. Additionally, it automates the **deployment of microservices** for the application and the **Prometheus stack** for monitoring.  
+
+This setup ensures a **fully automated cloud infrastructure**, supporting efficient microservices deployment and observability.  
 
 ---
 
@@ -12,13 +14,12 @@ Terraform installed (`>= 1.3`)
 Ansible installed (`>= 2.9`)  
 
 ### **Steps**  
-**Clone the repo**  
+**Clone the repository:**  
    ```sh
    git clone git@github.com:Osamaghorab/infra-tf-pb.git
    cd infra-tf-pb
 
-
-Contributors & Links
-- Main Repo: 🔗 micsvc-project
-- Microservices Deployment Repo: 🔗 micsvc-manifests
-- Original Reference Repo: 🔗 Google Cloud Microservices
+## **Contributors & Links**  
+**Main Repo:** 🔗 [micsvc-project](https://github.com/Osamaghorab/micsvc-project)  
+ **Microservices Deployment Repo:** 🔗 [micsvc-manifests](https://github.com/Osamaghorab/micsvc-manifests)  
+ **Original Reference Repo:** 🔗 [Google Cloud Microservices Demo](https://github.com/GoogleCloudPlatform/microservices-demo)  
