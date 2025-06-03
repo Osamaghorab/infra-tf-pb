@@ -16,11 +16,10 @@ Ansible installed (`>= 2.9`)
 
 
 
-**Clone the repository:**  
+1. **Clone repository:**  
    ```sh
    git clone git@github.com:Osamaghorab/infra-tf-pb.git
-   cd infra-tf-pb
-
+   
 
 
 Contributors & Links
