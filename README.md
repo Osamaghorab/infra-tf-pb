@@ -22,7 +22,7 @@ Ansible installed (`>= 2.9`)
    
 
 
-Contributors & Links
-Main Repo: 🔗 micsvc-project
-Microservices Deployment Repo: 🔗 micsvc-manifests
-Original Reference Repo: 🔗 Google Cloud Microservices Demo
+## **Contributors & Links**  
+**Main Repo:** 🔗 [micsvc-project](https://github.com/Osamaghorab/micsvc-project)  
+**Microservices Deployment Repo:** 🔗 [micsvc-manifests](https://github.com/Osamaghorab/micsvc-manifests)  
+**Original Reference Repo:** 🔗 [Google Cloud Microservices Demo](https://github.com/GoogleCloudPlatform/microservices-demo)  
